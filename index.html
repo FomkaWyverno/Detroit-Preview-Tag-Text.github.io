@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Detroit Formatter</title>
+    <link rel="icon" href="images/icon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="input-formmater">
+            <div class="input-formmater__tab">
+                <div class="tab-formmater-container">
+                    <button onclick="insertTextAtCursor('<QD_NORMAL>')" class="tab-formmater-container__button tab-formmater-container__button--bold">
+                        <span>B</span>
+                    </button>
+                    <button onclick="insertTextAtCursor('<QD_THIN>')" class="tab-formmater-container__button tab-formmater-container__button--thin">
+                        <span>Th</span>
+                    </button>
+                    <button onclick="insertTextAtCursor('<QD_BR>')" class="tab-formmater-container__button tab-formmater-container__button--break"><span></span></button>
+                </div>
+            </div>
+            <textarea id="formmater-input" class="input-formmater__textarea"></textarea>
+        </div>
+
+        <div class="preview">
+            <div class="preview__text">
+                <span class="preview__text--bold">ІМ’Я ДЕВІАНТА:ДЕНІЕЛ</span>
+                <span class="preview__text--thin">ІМ’Я ДЕВІАНТА:ДЕНІЕЛ</span>
+            </div>
+            <img class="preview__img" src="images/preview.png" alt="img">
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

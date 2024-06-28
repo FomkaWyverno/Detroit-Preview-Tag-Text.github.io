@@ -1,0 +1,26 @@
+.preview {
+    &__img {
+        width: 1280px;
+        height: 720px;
+    }
+
+    &__text {
+        position: absolute;
+        left: 45%;
+        top: 30%;
+
+        font-family: "Montserrat", sans-serif;
+        font-size: 38px;
+        color: #fff;
+
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 36px 24px 36px 24px;
+
+        &--bold {
+            font-weight: 700;
+        }
+        &--thin {
+            font-weight: 100;
+        }
+    }
+}

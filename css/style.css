@@ -1,0 +1,168 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  cursor: url(../images/cursor.png), auto;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #2b2b2b;
+}
+
+main {
+  height: 100%;
+}
+
+button, input, textarea {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, p, ul, ol {
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+td {
+  text-align: center;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-formmater {
+  display: flex;
+  flex-direction: column;
+  width: 950px;
+  height: 140px;
+  border-radius: 8px;
+  border: 2px #AAAAAA solid;
+  overflow: hidden;
+}
+.input-formmater__tab {
+  width: 100%;
+  height: 40px;
+  background-color: #EEEEEE;
+  border-bottom: 2px #8A8787 solid;
+}
+.input-formmater__textarea {
+  background-color: #fff;
+  resize: none;
+  outline: none;
+  border: none;
+  flex-grow: 1;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.tab-formmater-container {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  height: 100%;
+}
+.tab-formmater-container__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28px;
+  width: 28px;
+  border-radius: 16px;
+  border: none;
+  padding: none;
+  margin: none;
+  font-family: "Gothic A1", sans-serif;
+}
+.tab-formmater-container__button--bold {
+  font-weight: 900;
+}
+.tab-formmater-container__button--thin {
+  font-weight: 100;
+}
+.tab-formmater-container__button--break {
+  padding: 0px;
+}
+.tab-formmater-container__button--break span {
+  display: block;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/break.svg);
+}
+.tab-formmater-container__button:not(:first-child) {
+  margin-left: 8px;
+}
+.tab-formmater-container__button:hover {
+  cursor: url(../images/pointer.png), auto;
+  background-color: #dfdbdb;
+}
+.tab-formmater-container__button * {
+  pointer-events: none;
+}
+
+.preview__img {
+  width: 1280px;
+  height: 720px;
+}
+.preview__text {
+  position: absolute;
+  left: 45%;
+  top: 30%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 38px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 36px 24px 36px 24px;
+}
+.preview__text--bold {
+  font-weight: 700;
+}
+.preview__text--thin {
+  font-weight: 100;
+}
