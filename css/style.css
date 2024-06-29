@@ -159,6 +159,7 @@ td {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 36px 24px 36px 24px;
+  font-weight: 100;
 }
 .preview__text--bold {
   font-weight: 600;
