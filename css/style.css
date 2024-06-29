@@ -157,6 +157,7 @@ td {
   font-family: "Montserrat", sans-serif;
   font-size: 38px;
   color: #fff;
+  text-wrap: nowrap;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 36px 24px 36px 24px;
   font-weight: 100;
