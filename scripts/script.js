@@ -1,8 +1,9 @@
 const input = document.getElementById('formmater-input');
 const preview = document.querySelector('.preview__text');
 
+openSite();
 
-input.addEventListener('input', updatePreview)
+input.addEventListener('input', (e) => {updatePreview(e.target.value)})
 input.addEventListener('input', () => {
     const value = input.value;
     input.value = value
@@ -13,10 +14,9 @@ input.addEventListener('input', () => {
 
 
 
-function updatePreview() {
-    const inputText = input.value;
-    console.log(`Format text: ${inputText}`)
-    const formated = formatText(inputText);
+function updatePreview(text) {
+    console.log(`Format text: ${text}`)
+    const formated = formatText(text);
     preview.innerHTML = formated;
 }
 
@@ -42,4 +42,17 @@ function insertTextAtCursor(tag) {
 
     input.focus();
     updatePreview();
+}
+
+function openSite() {
+    let params = new URLSearchParams(document.location.search);
+    let text = params.get('text');
+
+    if (text) {
+        console.log(`Has param: Text = ${text}`)
+        input.value = text;
+        updatePreview(text);
+    } else {
+        console.log(`No has param text in url`);
+    }
 }
